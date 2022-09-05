@@ -1,0 +1,255 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* font-family: 'Josefin Sans', sans-serif; */
+  font-family: 'Bebas Neue', cursive;
+}
+
+:root {
+  --babyBlueEyesColor: #A9CEF4;
+  --charcoalcolor: #36494E;
+  --blackColor: #0000;
+  --airSuperiorityBlue: #7EA0B7;
+  --darkElectricBlue: #597081;
+  font-size: 16px;
+  --zindex-navbar: 5000;
+}
+
+.navBar {
+  display: flex;
+  background-color: #000;
+  opacity: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  z-index: var(--zindex-navbar);
+
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.portraitSection {
+  margin-top: 100px;
+  background-color: var(--charcoalcolor);
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.shopSection {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: var(--darkElectricBlue);
+}
+
+.endSection {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: black;
+  align-items: center;
+}
+
+.boxPortraits {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 3000px;
+}
+
+.containerPortatrait {
+  background-color: var(--darkElectricBlue);
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.containerPortatrait figure {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+
+}
+
+.containerPortatrait figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+}
+
+.containerPortatrait figure .capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(19, 119, 152, 0.7);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.containerPortatrait figure:hover>.capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.containerPortatrait figure:hover>.capa h1 {
+  margin-top: 200px;
+  margin-bottom: 15px;
+  transition: all 500ms ease-out;
+}
+
+.containerPortatrait figure .capa h1 {
+  color: white;
+  font-size: 2em;
+}
+
+.shopSection h1 {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+.shopSection h2 {
+  color: white;
+  text-align: left;
+  font-size: 2em;
+  margin-left: 50px;
+}
+
+/*! ---------------------------------------------------------------------- */
+
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.endSection h3 {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.endSection h2 {
+  color: white;
+  align-self: flex-start;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.endSection p {
+  color: white;
+  text-align: center;
+}
+
+.boxEnd {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  align-items: flex-start;
+}
+
+.endContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2em;
+}
+
+.endShop {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.endSocial {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+.iconMedia {
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+
+.iconMedia img {
+  width: 100%;
+}
