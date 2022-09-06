@@ -2,25 +2,15 @@ const backButton = document.querySelector("#backButton")
 const nextButton = document.querySelector("#nextButton")
 const productos = document.querySelector("#cards")
 
-backButton.addEventListener("click", function(){
-    productos.scrollLeft -= 316
-})
-
-nextButton.addEventListener("click", function(){
-    productos.scrollLeft += 316
-})
-
 const scndBackButton = document.querySelector("#scndBackButtongg")
 const scndNextButton = document.querySelector("#scndNextButtongg")
 const scndProducts = document.querySelector("#scndCards")
 
-scndBackButton.addEventListener("click", function(){
-    scndProducts.scrollLeft -= 316
-})
 
-scndNextButton.addEventListener("click", function(){
-  scndProducts.scrollLeft += 316
-})
+function scrollin (direction, id, distance){
+  const productos = document.querySelector(id)
+  productos.scrollLeft += (distance * direction)
+}
 
 ciclismoProductos = [
   {
