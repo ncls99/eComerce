@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <title>eSportComerce</title>
 </head>
+
 <body>
     <header>
         <nav class="navBar">
@@ -18,7 +19,7 @@
                 <a href="#voleibol">Voleibol</a>
             </li>
             <li>
-                <a href="#ciclismo" >Ciclismo</a>
+                <a href="#ciclismo">Ciclismo</a>
             </li>
             <li>
                 <a href="#contact">Contacto</a>
@@ -50,24 +51,223 @@
             <h1>¡Escoge tus productos!</h1>
             <div class="voleibolSection">
                 <h2 class="titleShop" id="voleibol">Voleibol</h2>
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">Slide 1</div>
-                      <div class="swiper-slide">Slide 2</div>
-                      <div class="swiper-slide">Slide 3</div>
-                      <div class="swiper-slide">Slide 4</div>
-                      <div class="swiper-slide">Slide 5</div>
-                      <div class="swiper-slide">Slide 6</div>
-                      <div class="swiper-slide">Slide 7</div>
-                      <div class="swiper-slide">Slide 8</div>
-                      <div class="swiper-slide">Slide 9</div>
+                <div class="maincito">
+                    <div class="swiperButton" id="backButton">
+                        <img src="./img/backIcon.png" alt="">
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                  </div>
+                    <div class="swiper-container" id="cards">
+                        <div class="card">
+                            <div class="boxImg">
+                                <img src="./img/camisetaHombre.png" alt="">
+                            </div>
+                            <div class="datosCard">
+                                <h3>Camiseta Selección Colombia Hombre</h3>
+                                <h4>precio 80.000.00</h4>
+                                <p>Camiseta oficial masculina talla unica de la selección colombia</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="boxImg">
+                                <img src="./img/camisetaMujer.png" alt="">
+                            </div>
+                            <div class="datosCard">
+                                <h3>Esqueleto Selección Colombia mujer</h3>
+                                <h4>precio 80.000.00</h4>
+                                <p>Esqueleto oficial femenina talla unica de la selección colombia</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="boxImg">
+                                <img src="./img/mallaMikasa.png" alt="">
+                            </div>
+                            <div class="datosCard">
+                                <h3>Malla mikasa profesional</h3>
+                                <h4> 360.000.00</h4>
+                                <p>Red de Volleyball recreacional
+                                    Cuerda en polipropileno
+                                    Con materiales contra la humedad
+                                    Tamaño: 32' x 3'</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="boxImg">
+                                <img src="./img/mikasaV300W.png" alt="">
+                            </div>
+                            <div class="datosCard">
+                                <h3>Balón Mikasa Voleibol V330w</h3>
+                                <h4>180.000.00</h4>
+                                <p> - Balón oficial de la FIVB. <br>
+                                    - Tamaño y Peso oficiales. <br>
+                                    - Circunferencia: 65-67 cm. <br>
+                                    - Peso: 260-280 g.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="boxImg">
+                                <img src="./img/molten500.png" alt="">
+                            </div>
+                            <div class="datosCard">
+                                <h3>Balón Voleibol Molten V5m 5000</h3>
+                                <h4>340.000.00</h4>
+                                <p>
+                                    Elaborado en cuero composite laminado <br>
+                                    Peso (260 -280 g) y color (verde, blanco, rojo) oficiales.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="boxImg">
+                                <img src="./img/rodillerasVoleibol.png" alt="">
+                            </div>
+                            <div class="datosCard">
+                                <h3>Rodillera Miyagi Elastica</h3>
+                                <h4>74.000.00</h4>
+                                <p>PAR DE RODILLERAS NYLON TERMOFORMADAS M6764 <br>
+                                    Estan fabricadas en material 40% nylon, 30% polyester y 30 % latex, que proveen una
+                                    presión uniforme
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="boxImg">
+                                <img src="./img/tenisAsics.png" alt="">
+                            </div>
+                            <div class="datosCard">
+                                <h3>Zapatillas Asics Upcourt 4</h3>
+                                <h4>564.000.00</h4>
+                                <p>Diseñado para atletas de cancha cubierta que son más nuevos en el juego</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="boxImg">
+                                <img src="./img/tenisMizuno.png" alt="">
+                            </div>
+                            <div class="datosCard">
+                                <h3>mizuno Wave Lightning Z4</h3>
+                                <h4>1.100.000.00</h4>
+                                <p>malla de aire superior: malla de aire superior para un tacto superior, transpirabilidad y comodidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiperButton" id="nextButton">
+                        <img src="./img/nextIcon.png" alt="">
+                    </div>
+                </div>
             </div>
             <div class="cyclingSection">
                 <h2 class="titleShop" id="ciclismo">Ciclismo</h2>
+            </div>
+            <div class="maincito">
+                <div class="swiperButton" id="scndBackButtongg">
+                    <img src="./img/backIcon.png" alt="">
+                </div>
+                <div class="swiper-container" id="scndCards">
+                    <div class="card">
+                        <div class="boxImg">
+                            <img src="./img/bicimela1.png" alt="">
+                        </div>
+                        <div class="datosCard">
+                            <h3>Camiseta Selección Colombia Hombre</h3>
+                            <h4>precio 80.000.00</h4>
+                            <p>Camiseta oficial masculina talla unica de la selección colombia</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="boxImg">
+                            <img src="./img/bicimelaGravel.png" alt="">
+                        </div>
+                        <div class="datosCard">
+                            <h3>Esqueleto Selección Colombia mujer</h3>
+                            <h4>precio 80.000.00</h4>
+                            <p>Esqueleto oficial femenina talla unica de la selección colombia</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="boxImg">
+                            <img src="./img/casco1.png" alt="">
+                        </div>
+                        <div class="datosCard">
+                            <h3>Rodilleras mikasa</h3>
+                            <h4>70.000.00</h4>
+                            <p>Rodilleras para voleibol unisex</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="boxImg">
+                            <img src="./img/casco2.png" alt="">
+                        </div>
+                        <div class="datosCard">
+                            <h3>Malla mikasa profesional</h3>
+                            <h4> 360.000.00</h4>
+                            <p>Red de Volleyball recreacional
+                                Cuerda en polipropileno
+                                Con materiales contra la humedad
+                                Tamaño: 32' x 3'</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="boxImg">
+                            <img src="./img/glove.png" alt="">
+                        </div>
+                        <div class="datosCard">
+                            <h3>Balón Mikasa Voleibol V330w</h3>
+                            <h4>180.000.00</h4>
+                            <p> - Balón oficial de la FIVB. <br>
+                                - Tamaño y Peso oficiales. <br>
+                                - Circunferencia: 65-67 cm. <br>
+                                - Peso: 260-280 g.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="boxImg">
+                            <img src="./img/jersey.png" alt="">
+                        </div>
+                        <div class="datosCard">
+                            <h3>Balón Voleibol Molten V5m 5000</h3>
+                            <h4>340.000.00</h4>
+                            <p>
+                                Elaborado en cuero composite laminado <br>
+                                Peso (260 -280 g) y color (verde, blanco, rojo) oficiales.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="boxImg">
+                            <img src="./img/pedal.png" alt="">
+                        </div>
+                        <div class="datosCard">
+                            <h3>Rodillera Miyagi Elastica</h3>
+                            <h4>74.000.00</h4>
+                            <p>PAR DE RODILLERAS NYLON TERMOFORMADAS M6764 <br>
+                                Estan fabricadas en material 40% nylon, 30% polyester y 30 % latex, que proveen una
+                                presión uniforme
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="boxImg">
+                            <img src="./img/zapatillas1.png" alt="">
+                        </div>
+                        <div class="datosCard">
+                            <h3>Zapatillas Asics Upcourt 4</h3>
+                            <h4>564.000.00</h4>
+                            <p>Diseñado para atletas de cancha cubierta que son más nuevos en el juego</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="boxImg">
+                            <img src="./img/asiento.png" alt="">
+                        </div>
+                        <div class="datosCard">
+                            <h3>mizuno Wave Lightning Z4</h3>
+                            <h4>1.100.000.00</h4>
+                            <p>malla de aire superior: malla de aire superior para un tacto superior, transpirabilidad y comodidad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiperButton" id="scndNextButtongg">
+                    <img src="./img/nextIcon.png" alt="">
+                </div>
             </div>
         </section>
         <section class="endSection" id="contact">
@@ -75,7 +275,7 @@
                 <h2>Articulos deportivos de Voleibol y Ciclismo.</h2>
             </div>
             <div class="boxEnd">
-                
+
                 <div class="endContact">
                     <h3>CONTACTANOS</h3>
                     <p>eSportComerce@gmail.com</p>
@@ -91,23 +291,24 @@
                     <h3>Social</h3>
                     <div class="socialIcons">
                         <div class="iconMedia">
-                            <a href="#"> <img src="./img/facebookIcon.png" alt="Facebook Icon" ></a>
+                            <a href="#"> <img src="./img/facebookIcon.png" alt="Facebook Icon"></a>
                         </div>
                         <div class="iconMedia">
-                            <a href="#"> <img src="./img/igIcon.png" alt="Instagram Icon" ></a>
+                            <a href="#"> <img src="./img/igIcon.png" alt="Instagram Icon"></a>
                         </div>
                         <div class="iconMedia">
-                            <a href="#"> <img src="./img/twitterIcon.png" alt="Twitter Icon" ></a>
+                            <a href="#"> <img src="./img/twitterIcon.png" alt="Twitter Icon"></a>
                         </div>
                         <div class="iconMedia">
-                            <a href="#"> <img src="./img//youtubeIcon.png" alt="youtubeIcon Icon" ></a>
+                            <a href="#"> <img src="./img//youtubeIcon.png" alt="youtubeIcon Icon"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
     </main>
     <script src="main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </body>
+
 </html>
