@@ -236,6 +236,8 @@ a {
   min-width: 450px;
   overflow: scroll;
   gap: 1em;
+  
+  border-radius: 5px;
 }
 
 .swiper-container::-webkit-scrollbar {
@@ -273,12 +275,170 @@ img {
 
 }
 
-.datosCard {
+.dataCard {
   color: white;
-  padding: 25px;
+  padding: 15px 25px;
+  width: 70%;
+  background-color: black;
 }
 
 .datosCard h3 {
   font-size: 25px;
   margin-bottom: 10px;
+  border-bottom: 1px solid var(--cardImageColor);
+  
+}
+
+.datosCard{
+  color: white;
+  padding: 15px 25px;
+  background-color: black;
+}
+
+.addToCartButton {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px;
+  margin: 0 10px 20px 0;
+  border: 1px solid #ccc;
+  background: #eee;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.addToCart {
+ max-width: 100%;
+}
+
+.cardDescription{
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.floating-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  right: 0;
+  margin: 35px 35px;
+  border-radius: 50%;
+  background-color:  rgb(19, 119, 152) ;
+  font-size: 2em;
+  color: white;
+  box-shadow: 3px 3px 10px black;
+}
+
+.cartSection{
+  background-color: var(--darkElectricBlue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 500px;
+  height: 75vh;
+  bottom: 0;
+  right: 0;
+  margin: 110px 25px;
+  position: fixed;
+  z-index: var(--zindex-navbar);
+  border-radius: 5px;
+  padding: 20px;
+  gap: 2em;
+  
+  box-shadow: 3px 3px 10px black;
+}
+
+.cartSection h1{
+  color: black;
+}
+
+.defaultCartImg{
+max-width: 40%;
+}
+
+.defaultCartImg img {
+  width: 100%;
+}
+
+.itemsCart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  max-height: 500px;
+  width: 70%;
+  overflow-x: hidden;
+  gap: 1em;
+}
+
+.itemsCart::-webkit-scrollbar {
+  width: 8px;     
+  height: 8px;    
+}
+
+.itemsCart::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.cardCart {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--cardImageColor);
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 95%;
+}
+
+.imgCard {
+  display: flex;
+  align-items: center;
+ width: 30%;
+ background-color: var(--cardImageColor);
+}
+
+.totalLabels {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.checkOut{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.buttonCheckOut{
+padding: 10px;
+border-radius: 5px;
+}
+
+.toolsCard button {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #ccc;
+  background: #eee;
+  border-radius: 3px;
+}
+
+.toolsCard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
 }
