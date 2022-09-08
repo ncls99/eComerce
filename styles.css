@@ -20,6 +20,9 @@
   font-size: 16px;
   --zindex-navbar: 5000;
 }
+main {
+  width: 100%;
+}
 
 .navBar {
   display: flex;
@@ -463,6 +466,28 @@ border-radius: 5px;
   width: 100%;
 }
 
-@media (max-width: 750px){
-  
+@media (max-width: 650px){
+  .boxEnd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .socialIcons{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+  }
+
+  .swiper-container{
+    max-width: 500px;
+    min-width: 320px;
+  }
+ 
+}
+
+@media (max-width: 440px){
+  .swiperButton {
+    display: none;
+  }
 }
