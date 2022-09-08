@@ -263,6 +263,7 @@ img {
   min-height: 30px;
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 
 .swiperButton img {
@@ -333,6 +334,13 @@ img {
   font-size: 2em;
   color: white;
   box-shadow: 3px 3px 10px black;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.floating-button:hover {
+  background-color: var(--charcoalcolor);
+  
 }
 
 .cartSection{
@@ -351,7 +359,8 @@ img {
   border-radius: 5px;
   padding: 20px;
   gap: 2em;
-  
+  overflow:hidden;
+  transition: all 500ms ease-out;
   box-shadow: 3px 3px 10px black;
 }
 
@@ -409,6 +418,7 @@ max-width: 40%;
   width: 100%;
   flex-direction: row;
   justify-content: space-around;
+  gap: 2em;
 }
 
 .checkOut{
@@ -441,4 +451,18 @@ border-radius: 5px;
   justify-content: space-around;
   align-items: center;
   margin-top: 10px;
+}
+
+.cartHide {
+  height: 0;
+  padding: 0;
+  transition: all 500ms ease-out;
+}
+
+.detallesCompra{
+  width: 100%;
+}
+
+@media (max-width: 750px){
+  
 }
