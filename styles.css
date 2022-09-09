@@ -436,6 +436,7 @@ max-width: 40%;
 .buttonCheckOut{
 padding: 10px;
 border-radius: 5px;
+cursor: pointer;
 }
 
 .toolsCard button {
