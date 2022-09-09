@@ -116,12 +116,12 @@ a {
   text-align: center;
 }
 
-.containerPortatrait figure:hover>.capa {
+.containerPortatrait figure a:hover>.capa {
   opacity: 1;
   visibility: visible;
 }
 
-.containerPortatrait figure:hover>.capa h1 {
+.containerPortatrait figure a:hover>.capa h1 {
   margin-top: 25%;
   margin-bottom: 15px;
   transition: all 500ms ease-out;
@@ -483,6 +483,11 @@ border-radius: 5px;
     max-width: 500px;
     min-width: 320px;
   }
+.cartSection {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
  
 }
 
@@ -490,4 +495,5 @@ border-radius: 5px;
   .swiperButton {
     display: none;
   }
+
 }

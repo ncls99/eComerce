@@ -182,6 +182,11 @@ function saveCart(cart) {
   renderCart()
 }
 
+function checkOut(){
+  const emptyCart = []
+  saveCart(emptyCart)
+}
+
 function addToCart(button) {
   const cart = getCart()
   const buttonId = button.getAttribute("data-id")
